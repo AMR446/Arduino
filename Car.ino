@@ -45,7 +45,7 @@
 GTimer time(MS, BLINK_TIME);
 Ultrasonic sonar(TRIG, ECHO);
 byte dist;
-bool rightln, leftln;
+bool rightln, leftln, leds = 0;
 
 void setup() {
 	Serial.begin(9600);
